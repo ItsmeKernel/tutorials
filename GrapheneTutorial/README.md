@@ -1,4 +1,4 @@
-Django project integrating GraphQL using Graphene.
+# Django/GraphQL integration using Graphene #
 
 Tested with Python (3.5 and 2.7.12) and the latest stable version for the following packages.
 
