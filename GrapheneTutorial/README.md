@@ -1,5 +1,3 @@
-# Graphene Tutoral #
-
 Django project integrating GraphQL using Graphene.
 
 Tested with Python (3.5 and 2.7.12) and the latest stable version for the following packages.
@@ -33,3 +31,7 @@ I strongly recommend using _virtualenv_ and _virtualenvwrapper_
 
 * python manage.py runserver
 * Go to **http://localhost:8000/graphql**
+
+## Check the tutorial ##
+
+[Part 1](http://arecordon.blogspot.com.ar/2017/01/django-graphql-integration-with-graphene.html)
