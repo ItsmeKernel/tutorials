@@ -1,0 +1,87 @@
+[
+    {
+    	"model": "courses.teacher",
+    	"pk": 1,
+    	"fields": {
+    		"name": "Lando Calrissian"
+    	}
+    }, {
+    	"model": "courses.teacher",
+    	"pk": 2,
+    	"fields": {
+    		"name": "Obi-Wan Kenobi"
+    	}
+    }, {
+    	"model": "courses.teacher",
+    	"pk": 3,
+    	"fields": {
+    		"name": "Leia Organa"
+    	}
+    }, {
+    	"model": "courses.course",
+    	"pk": 1,
+    	"fields": {
+    		"name": "Fundamental Data Structures and Algorithms",
+    		"teacher": 1,
+    		"summary": "This knowledge unit builds directly on the foundation provided by Software Development Fundamentals."
+    	}
+    }, {
+    	"model": "courses.course",
+    	"pk": 2,
+    	"fields": {
+    		"name": "Basic Automata Computability and Complexity",
+    		"teacher": 2
+    	}
+    }, {
+    	"model": "courses.course",
+    	"pk": 3,
+    	"fields": {
+    		"name": "Algorithmic Strategies",
+    		"teacher": 2,
+    		"summary": "An instructor might choose to cover these algorithmic strategies in the context of the algorithms presented in 'Fundamental Data Structures and Algorithms' below."
+    	}
+    }, {
+    	"model": "courses.course",
+    	"pk": 4,
+    	"fields": {
+    		"name": "Basic Analysis",
+    		"teacher": 3
+    	}
+    }, {
+    	"model": "courses.course",
+    	"pk": 5,
+    	"fields": {
+    		"name": "Advanced Automata Theory and Computability",
+    		"teacher": 3
+    	}
+    }, {
+    	"model": "courses.course",
+    	"pk": 6,
+    	"fields": {
+    		"name": "Advanced Data Structures Algorithms and Analysis",
+    		"teacher": 3,
+    		"summary": "Many programs will want their students to have exposure to more advanced algorithms or methods of analysis."
+    	}
+    }, {
+    	"model": "courses.course",
+    	"pk": 7,
+    	"fields": {
+    		"name": "Digital Logic and Digital Systems",
+    		"teacher": 3
+    	}
+    }, {
+    	"model": "courses.course",
+    	"pk": 8,
+    	"fields": {
+    		"name": "Machine Level Representation of Data",
+    		"teacher": 3
+    	}
+    }, {
+    	"model": "courses.course",
+    	"pk": 9,
+    	"fields": {
+    		"name": "Assembly Level Machine Organization",
+    		"teacher": 1
+    	}
+    }
+]

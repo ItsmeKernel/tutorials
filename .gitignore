@@ -87,3 +87,10 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# Files under migrations
+**/migrations/*
+
+
+# sqlite
+**/db.sqlite3

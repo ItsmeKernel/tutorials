@@ -1,0 +1,6 @@
+django
+graphql-core
+django-filter
+graphene
+graphene-django
+django_graphiql
