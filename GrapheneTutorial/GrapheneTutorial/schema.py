@@ -4,6 +4,9 @@ from graphene_django.debug import DjangoDebug
 import courses.schema
 
 class Query(courses.schema.Query, graphene.ObjectType):
-    debug = graphene.Field(DjangoDebug, name='__debug')
+    pass
 
-schema = graphene.Schema(query=Query)
+class AllMutations(courses.schema.CourseMutations, graphene.ObjectType):
+    pass
+
+schema = graphene.Schema(query=Query, mutation=AllMutations)
