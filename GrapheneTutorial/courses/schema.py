@@ -102,11 +102,38 @@ class UpdateTeacher(graphene.Mutation):
         teacher.save()
         return UpdateTeacher(teacher=teacher)
 
+class DeleteCourse(graphene.Mutation):
+    class Input:
+        name = graphene.String()
+        id = graphene.String()
+
+    course = graphene.Field(CourseNode)
+
+
+    @classmethod
+    def mutate(self, cls, input, context, info):
+        id = input.get("id")
+        try:
+            id = int(id)
+        except ValueError:
+            try:
+                _type, id = Node.from_global_id(input.get("id"))
+                assert _type == 'CourseNode', 'Found {} instead of course'.format(_type)
+                id = int(id)
+            except:
+                raise Exception("Received Invalid Course id: {}".format(id))
+        course = Course._meta.model.objects.get(id=id)
+        if course is not None:
+            course.delete()
+        return DeleteCourse(course=course)
+
+
 
 class CourseMutations(AbstractType):
     create_teacher = CreateTeacher.Field()
     create_course = CreateCourse.Field()
     update_teacher = UpdateTeacher.Field()
+    delete_course = DeleteCourse.Field()
 
 
 class Query(AbstractType):
