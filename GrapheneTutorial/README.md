@@ -35,4 +35,5 @@ I strongly recommend using _virtualenv_ and _virtualenvwrapper_
 ## Check the tutorial ##
 
 [Part 1 - Integration and Basic Queries](http://arecordon.blogspot.com.ar/2017/01/django-graphql-integration-with-graphene_24.html)
+
 [Part 2 - Mutations](http://arecordon.blogspot.com.ar/2017/01/django-graphql-integration-with.html)
